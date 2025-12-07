@@ -6,7 +6,7 @@
 /*   By: fsitter <fsitter@student.42vienna.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 11:10:25 by fsitter           #+#    #+#             */
-/*   Updated: 2025/12/08 00:42:12 by fsitter          ###   ########.fr       */
+/*   Updated: 2025/12/08 00:47:30 by fsitter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ int	main(int ac, char **av)
 	if (ac < 2)
 		return (0);
 	if (!f_valid_integers_plus(av, ac, 1))
-		return (ft_putstr_fd("ERROR\n", 2), f_free_stack(&stack_a),
-			f_free_stack(&stack_b), 0);
+		return (ft_putstr_fd("ERROR\n", 2), 0);
 	f_init_stack(&stack_a);
 	f_init_stack(&stack_b);
 	if (!f_fill_nodes(&stack_a, av, ac, 1))
