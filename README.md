@@ -35,3 +35,9 @@ but be sure to use the bash shell.
 
 - Peers and Evaluations
 - Libft
+- YoTube - Neso Academy - Doubly Linked List (Insertion at the Beginning)
+	https://www.youtube.com/watch?v=SPKCATQ--KY
+- YouTube - Neso Academy - Doubly Linked List (Insertion at the End)
+	https://www.youtube.com/watch?v=LDMF8iqO8pg
+- YouTube - Neso Academy - Doubly Linked List (Deleting the First Node)
+	https://www.youtube.com/watch?v=ZxGz3XkGlyA
