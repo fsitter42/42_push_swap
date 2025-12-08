@@ -22,7 +22,7 @@ To compile this project use the Makefile and run:
 
 To run it eather use:
 
-	./push_swap "4 2 42"
+	./push_swap 4 2 42
 
 using any shell or:
 
