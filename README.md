@@ -26,7 +26,7 @@ To run it eather use:
 
 using any shell or:
 
-	ARG="4 2 42"; ./push_swap $ARG
+	ARG="4 2 42";./push_swap $ARG
 
 but be sure to use the bash shell.
 
