@@ -41,3 +41,4 @@ but be sure to use the bash shell.
 	https://www.youtube.com/watch?v=LDMF8iqO8pg
 - YouTube - Neso Academy - Doubly Linked List (Deleting the First Node)
 	https://www.youtube.com/watch?v=ZxGz3XkGlyA
+- Perplexity Ai - I use ai to discuss my ideas and in case I can`t find my mistake
