@@ -6,7 +6,7 @@
 /*   By: fsitter <fsitter@student.42vienna.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 10:50:20 by fsitter           #+#    #+#             */
-/*   Updated: 2025/12/06 13:44:27 by fsitter          ###   ########.fr       */
+/*   Updated: 2025/12/10 23:27:41 by fsitter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,13 +78,10 @@ void					t_radix(t_stack *stack_a, t_stack *stack_b, int mr);
 int						f_is_sorted(t_stack *stack_a);
 void					f_pre_radix(t_stack *stack_a, t_stack *stack_b);
 
-// quicksort.c
-void					f_quicksort(t_stack *stack_a, t_stack *stack_b);
-int						f_find_min_index(t_stack *stack);
-int						f_ra_or_rra(t_stack *stack, int min_index);
-
 // microsort.c
 void					f_sort_three(t_stack *stack);
 void					f_sort_five(t_stack *stack_a, t_stack *stack_b);
 void					f_micro_sort(t_stack *stack_a, t_stack *stack_b);
+int						f_find_min_index(t_stack *stack);
+int						f_ra_or_rra(t_stack *stack, int min_index);
 #endif

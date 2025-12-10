@@ -8,8 +8,7 @@ SOURCE = 	push_operations.c \
 			sort_index.c \
 			rotate_operations.c \
 			swap_operations.c \
-			microsort.c \
-			quicksort.c			
+			microsort.c 		
 
 HEADER = push_swap.h
 

@@ -6,7 +6,7 @@
 /*   By: fsitter <fsitter@student.42vienna.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 12:44:58 by fsitter           #+#    #+#             */
-/*   Updated: 2025/12/06 13:23:23 by fsitter          ###   ########.fr       */
+/*   Updated: 2025/12/10 23:27:20 by fsitter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	f_sort_five(t_stack *stack_a, t_stack *stack_b)
 {
 	int	min_index;
 
-	if (stack_a->size > 25)
+	if (stack_a->size > 69)
 		return ;
 	while (stack_a->size > 3)
 	{
@@ -63,6 +63,41 @@ void	f_micro_sort(t_stack *stack_a, t_stack *stack_b)
 	}
 	else if (stack_a->size == 3)
 		f_sort_three(stack_a);
-	else if (stack_a->size > 3 && stack_a->size < 25)
+	else if (stack_a->size > 3)
 		f_sort_five(stack_a, stack_b);
+}
+
+int	f_find_min_index(t_stack *stack)
+{
+	t_number	*current;
+	t_number	*min;
+
+	current = stack->top;
+	min = current;
+	while (current)
+	{
+		if (current->number < min->number)
+			min = current;
+		current = current->next;
+	}
+	return (min->index);
+}
+
+int	f_ra_or_rra(t_stack *stack, int min_index)
+{
+	t_number	*current;
+	size_t		i;
+
+	i = 0;
+	current = stack->top;
+	while (current)
+	{
+		if (current->index == min_index)
+			break ;
+		current = current->next;
+		i++;
+	}
+	if (i > stack->size / 2)
+		return (0);
+	return (1);
 }
